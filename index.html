@@ -35,6 +35,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- reset 다음 common -->
     <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="css/common.css" />
 </head>
 
@@ -42,6 +43,14 @@
     <div id="wrap">
         <div id="header">
             <div id="lnb">
+                <div class="lnb_a">
+                    <ul>
+                        <li>시도선거관리위원회</li>
+                        <li>English</li>
+                        <li>회원가입</li>
+                        <li>로그인</li>
+                    </ul>
+                </div>
                 <ul id="nav" class="cf">
                     <li class="fl">
                         <a href="#"><img src="img/logo.png" alt="logo" /></a>
@@ -392,6 +401,7 @@
                     <!-- class="m_6 fl" -->
                 </ul>
                 <!-- id="nav" -->
+                
             </div>
             <!-- id="lnb" -->
             <div id="banners" class="container">
@@ -428,7 +438,110 @@
                 <div class="container cf">
                     <div id="content1_left" class="m_notice">
                         <div class="mainpop1_1">
-                            <p><a href="#">선거1</a></p>
+                            <div class="tab">
+                                <ul class="tabnav">
+                                  <li><a href="#tab01">알림·소식</a></li>
+                                  <li><a href="#tab02">공고</a></li>
+                                  <li><a href="#tab03">채용</a></li>
+                                  <li><a href="#tab04">정책·제도</a></li>
+                                </ul>
+                                <div class="tabcontent">
+                                  <div id="tab01">
+                                    <h3 class="soundOnly"><!-- 알림·소식 --></h3>
+                                    <div class="topArea">
+                                        <span class="date">22
+                                            <em class="year">2022.06</em>
+                                        </span>
+                                        <a href="#" class="title">2022년 하반기 선거·정치제도 개선을 위한 논문 공모 안내</a>
+                                    </div>
+                                    <ul>
+                                        <li class="content">
+                                            <a href="#">2022년 양대선거 공명선거관리 유공 정부포상 후보자 공개검증</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">홈페이지 안정화 작업안내</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">대표홈페이지 서비스 안정화 작업 안내</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">선거사, 정당사, 선거관리위원회사 행정박물자료 구입 공모</a>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                  <div id="tab02">
+                                    <h3 class="soundOnly"><!-- 공고 --></h3>
+                                    <div class="topArea">
+                                        <span class="date">22
+                                            <em class="year">2022.08</em>
+                                        </span>
+                                        <a href="#" class="title">중앙당창당준비위원회 소멸 공고</a>
+                                    </div>
+                                    <ul>
+                                        <li class="content">
+                                            <a href="#">중앙당 변경등록 공고(시대전환)</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">중앙당 변경등록 공고(독도한국당)</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">후원회 변경등록 공고</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">후원회 등록말소 공고(더불어민주당대표경선후보자강훈식후원회)</a>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                  <div id="tab03">  <h3 class="soundOnly"><!-- 채용 --></h3>
+                                    <div class="topArea">
+                                        <span class="date">24
+                                            <em class="year">2022.08</em>
+                                        </span>
+                                        <a href="#" class="title">중앙선거관리위원회 조리원 채용공고</a>
+                                    </div>
+                                    <ul>
+                                        <li class="content">
+                                            <a href="#">제5회 경력경쟁채용시험 서류전형 합격자 및 면접시험 일정 안내</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">2022년도 중앙위원회 선거안내센터 선거안내요원 모집 안내문</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">제5회 경력경쟁채용시험 시행계획 변경 공고</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">2022년도 제4회 경력경쟁채용시험(재공고) 최종합격자 발표</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                  <div id="tab04">
+                                    <h3 class="soundOnly"><!-- 정책·제도 --></h3>
+                                    <div class="topArea">
+                                        <span class="date">23
+                                            <em class="year">2022.08</em>
+                                        </span>
+                                        <a href="#" class="title">2부 사전투표, 조작은 없었다.</a>
+                                    </div>
+                                    <ul>
+                                        <li class="content">
+                                            <a href="#"> 1부 부정선거, 의혹제기에 불과</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">선관위는 무슨 일을 할까? 1탄(공직선거관리)</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">나의권리! 소중한 한표의 가치는 얼마나 될까요??</a>
+                                        </li>
+                                        <li class="content">
+                                            <a href="#">민주주의를 위한 견제와 균형 삼권분립</a>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div><!--tab-->
+                            <p><a href="#">
+                                <!-- tab -->
+                            </a></p>
                         </div>
                     </div>
                     <div id="content1_right" class="m_notice">
@@ -451,7 +564,7 @@
             </div>
         </div>
         <!-- //#content1 -->
-        <div id="content2" class="bg5">
+        <div id="content2">
             <div class="container cf">
                 <div class="mainquick">
                     <span class="title">즐겨찾는 메뉴</span>
@@ -507,7 +620,7 @@
 
         </div>
         <!-- //#content2 -->
-        <div id="content3" class="bg6">
+        <div id="content3">
             <div class="container cf">
                 <div class="ban3_icon_01">
                     <p><a href="#"></a></p>
@@ -528,7 +641,7 @@
         </div>
         <!-- //#content3 -->
 
-        <footer id="footer" class="bg4">
+        <footer id="footer">
             <!-- #footer-nav+#footer-info -->
             <!-- //#contents -->
             <div class="footer_inner">
@@ -563,6 +676,13 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>">
+<script src="js/custom_jq3.js"></script>
+
+
+
+
 </body>
 
 </html>
