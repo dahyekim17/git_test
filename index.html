@@ -35,22 +35,24 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- reset 다음 common -->
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script src="js/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/mainslide.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+KR&display=swap');
+        #mainService1{background: url(img/tab1.png);}
+        .content1_top{background: url(img/tab2_1.png);}
+    </style>
 </head>
 
 <body>
+    
     <div id="wrap">
         <div id="header">
             <div id="lnb">
-                <div class="lnb_a">
-                    <ul>
-                        <li>시도선거관리위원회</li>
-                        <li>English</li>
-                        <li>회원가입</li>
-                        <li>로그인</li>
-                    </ul>
-                </div>
                 <ul id="nav" class="cf">
                     <li class="fl">
                         <a href="#"><img src="img/logo.png" alt="logo" /></a>
@@ -401,7 +403,7 @@
                     <!-- class="m_6 fl" -->
                 </ul>
                 <!-- id="nav" -->
-                
+
             </div>
             <!-- id="lnb" -->
             <div id="banners" class="container">
@@ -410,20 +412,37 @@
                         <span class="head">알림</span>
                         <span class="desc">- 중앙선관위, 자체 감사기구 독립적으로 운영하기로 결정</span>
                     </div>
-                    <div class="mainslider">
-                        <div class="ban1_img_01">
-                            <p><a href="#"></a></p>
-                        </div>
-                        <div class="ban1_img_02">
-                            <p><a href="#"></a></p>
-                        </div>
-                        <div class="ban1_img_03">
-                            <p><a href="#"></a></p>
+                    <div class="slide_container">
+                        <div class="slide_wrapper">
+                            <ul class="slides">
+                                <li>
+                                    <a href="#"><img src="./img/ban1_img01.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/ban1_img02.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/ban1_img03.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/ban1_img04.gif" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/ban1_img05.gif" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./img/ban1_img06.png" alt=""></a>
+                                </li>
+                            </ul>
+                            <p class="controls">
+                                <span class="prev"><i class="fas fa-chevron-left"></i></span>
+                                <span class="next"><i class="fas fa-chevron-right"></i></span>
+                            </p>
                         </div>
                     </div>
                     <div id="mainService1">
                         <div class="ban1_img_04">
-                            <p><a href="#">민원 정당/후보자 선거/법령 민주시민</a></p>
+                            <p><a href="#"></a></p>
                         </div>
                     </div>
                 </div>
@@ -439,124 +458,219 @@
                     <div id="content1_left" class="m_notice">
                         <div class="mainpop1_1">
                             <div class="tab">
-                                <ul class="tabnav">
-                                  <li><a href="#tab01">알림·소식</a></li>
-                                  <li><a href="#tab02">공고</a></li>
-                                  <li><a href="#tab03">채용</a></li>
-                                  <li><a href="#tab04">정책·제도</a></li>
+                                <ul class="tabnav tabnav1">
+                                    <li><a href="#tab01">알림·소식</a></li>
+                                    <li><a href="#tab02">공고</a></li>
+                                    <li><a href="#tab03">채용</a></li>
+                                    <li><a href="#tab04">정책·제도</a></li>
                                 </ul>
-                                <div class="tabcontent">
-                                  <div id="tab01">
-                                    <h3 class="soundOnly"><!-- 알림·소식 --></h3>
-                                    <div class="topArea">
-                                        <span class="date">22
-                                            <em class="year">2022.06</em>
-                                        </span>
-                                        <a href="#" class="title">2022년 하반기 선거·정치제도 개선을 위한 논문 공모 안내</a>
+                                <div class="tabcontent tabcontent1">
+                                    <div id="tab01">
+                                        <h3 class="soundOnly">
+                                            <!-- 알림·소식 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">22
+                                                <em class="year">2022.06</em>
+                                            </span>
+                                            <a href="#" class="title">2022년 하반기 선거·정치제도 개선을 위한 논문 공모 안내</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#">2022년 양대선거 공명선거관리 유공 정부포상 후보자 공개검증</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">홈페이지 안정화 작업안내</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">대표홈페이지 서비스 안정화 작업 안내</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">선거사, 정당사, 선거관리위원회사 행정박물자료 구입 공모</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="content">
-                                            <a href="#">2022년 양대선거 공명선거관리 유공 정부포상 후보자 공개검증</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">홈페이지 안정화 작업안내</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">대표홈페이지 서비스 안정화 작업 안내</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">선거사, 정당사, 선거관리위원회사 행정박물자료 구입 공모</a>
-                                        </li>
-                                    </ul>
-                                  </div>
-                                  <div id="tab02">
-                                    <h3 class="soundOnly"><!-- 공고 --></h3>
-                                    <div class="topArea">
-                                        <span class="date">22
-                                            <em class="year">2022.08</em>
-                                        </span>
-                                        <a href="#" class="title">중앙당창당준비위원회 소멸 공고</a>
+                                    <div id="tab02">
+                                        <h3 class="soundOnly">
+                                            <!-- 공고 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">22
+                                                <em class="year">2022.08</em>
+                                            </span>
+                                            <a href="#" class="title">중앙당창당준비위원회 소멸 공고</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#">중앙당 변경등록 공고(시대전환)</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">중앙당 변경등록 공고(독도한국당)</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">후원회 변경등록 공고</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">후원회 등록말소 공고(더불어민주당대표경선후보자강훈식후원회)</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="content">
-                                            <a href="#">중앙당 변경등록 공고(시대전환)</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">중앙당 변경등록 공고(독도한국당)</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">후원회 변경등록 공고</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">후원회 등록말소 공고(더불어민주당대표경선후보자강훈식후원회)</a>
-                                        </li>
-                                    </ul>
-                                  </div>
-                                  <div id="tab03">  <h3 class="soundOnly"><!-- 채용 --></h3>
-                                    <div class="topArea">
-                                        <span class="date">24
-                                            <em class="year">2022.08</em>
-                                        </span>
-                                        <a href="#" class="title">중앙선거관리위원회 조리원 채용공고</a>
+                                    <div id="tab03">
+                                        <h3 class="soundOnly">
+                                            <!-- 채용 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">24
+                                                <em class="year">2022.08</em>
+                                            </span>
+                                            <a href="#" class="title">중앙선거관리위원회 조리원 채용공고</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#">제5회 경력경쟁채용시험 서류전형 합격자 및 면접시험 일정 안내</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">2022년도 중앙위원회 선거안내센터 선거안내요원 모집 안내문</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">제5회 경력경쟁채용시험 시행계획 변경 공고</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">2022년도 제4회 경력경쟁채용시험(재공고) 최종합격자 발표</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        <li class="content">
-                                            <a href="#">제5회 경력경쟁채용시험 서류전형 합격자 및 면접시험 일정 안내</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">2022년도 중앙위원회 선거안내센터 선거안내요원 모집 안내문</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">제5회 경력경쟁채용시험 시행계획 변경 공고</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">2022년도 제4회 경력경쟁채용시험(재공고) 최종합격자 발표</a>
-                                        </li>
-                                    </ul>
+                                    <div id="tab04">
+                                        <h3 class="soundOnly">
+                                            <!-- 정책·제도 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">23
+                                                <em class="year">2022.08</em>
+                                            </span>
+                                            <a href="#" class="title">2부 사전투표, 조작은 없었다.</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#"> 1부 부정선거, 의혹제기에 불과</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">선관위는 무슨 일을 할까? 1탄(공직선거관리)</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">나의권리! 소중한 한표의 가치는 얼마나 될까요??</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">민주주의를 위한 견제와 균형 삼권분립</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                  <div id="tab04">
-                                    <h3 class="soundOnly"><!-- 정책·제도 --></h3>
-                                    <div class="topArea">
-                                        <span class="date">23
-                                            <em class="year">2022.08</em>
-                                        </span>
-                                        <a href="#" class="title">2부 사전투표, 조작은 없었다.</a>
-                                    </div>
-                                    <ul>
-                                        <li class="content">
-                                            <a href="#"> 1부 부정선거, 의혹제기에 불과</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">선관위는 무슨 일을 할까? 1탄(공직선거관리)</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">나의권리! 소중한 한표의 가치는 얼마나 될까요??</a>
-                                        </li>
-                                        <li class="content">
-                                            <a href="#">민주주의를 위한 견제와 균형 삼권분립</a>
-                                        </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div><!--tab-->
+                            </div>
+                            <!--tab-->
                             <p><a href="#">
-                                <!-- tab -->
-                            </a></p>
+                                    <!-- tab -->
+                                </a></p>
                         </div>
                     </div>
                     <div id="content1_right" class="m_notice">
                         <div class="mainpop1_2">
-                            <p><a href="#">선거2</a></p>
+                            <div class="tab">
+                                <ul class="tabnav tabnav2 ">
+                                    <li><a href="#tab05">보도자료</a></li>
+                                    <li><a href="#tab06">사실은 이렇습니다</a></li>
+                                    <li><a href="#tab07">한국선거방송</a></li>
+                                </ul>
+                                <div class="tabcontent tabcontent2">
+                                    <div id="tab05">
+                                        <h3 class="soundOnly">
+                                            <!-- 알림·소식 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">16
+                                                <em class="year">2022.09</em>
+                                            </span>
+                                            <a href="#" class="title">2022 대한민국 열린 토론대회」참가 신청 접수</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#">선거연수원, 제17회 민주시민교육 국제심포지엄 개최</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">중앙선관위, 국기원(세계태권본부)장선거 10월 6일 실시</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">중앙선관위, 국회도서관과 업무협약(MOU) 체결</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">중앙선관위, 추석 전후 금품 등 제공행위 예방·단속강화</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab06">
+                                        <h3 class="soundOnly">
+                                            <!-- 공고 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">01
+                                                <em class="year">2022.09</em>
+                                            </span>
+                                            <a href="#" class="title"> 5부 모두가 근거없는 의혹</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#">4부 투표지분류기, 적법한 개표 보조 도구</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">3부 투표지 위조는 없었다</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">2부 사전투표, 조작은 없었다.</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">1부, 부정선거, 의혹제기에 불과</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab07">
+                                        <h3 class="soundOnly">
+                                            <!-- 채용 -->
+                                        </h3>
+                                        <div class="topArea">
+                                            <span class="date">16
+                                                <em class="year">2022.09</em>
+                                            </span>
+                                            <a href="#" class="title">그림에 담긴 민주주의와 정치의 세계[교양잡화점][회화편]</a>
+                                        </div>
+                                        <ul>
+                                            <li class="content">
+                                                <a href="#">영화속에 숨은 놀라운 이야기[교양잡화점][영화편]</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">18회 대한민국임시의정원과 여성독립운동 [열린민주주의교실 공감 플러스]</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">식탁위 민주주의[교양잡화점][음식편]</a>
+                                            </li>
+                                            <li class="content">
+                                                <a href="#">17회 나는 여성독립운동가 입니다 [열린민주주의교실 공감 플러스]</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab-->
+
+                            <p><a href="#"></a></p>
                         </div>
                     </div>
                     <div class="content1_top">
                         <div class="mainpop1_top">
-                            <p><a href="#">선거3</a></p>
                         </div>
                     </div>
                     <div class="content1_bottom">
                         <div class="mainpop1_bottom">
-                            <p><a href="#">선거4</a></p>
+                            <p><a href="#"></a></p>
                         </div>
                     </div>
 
@@ -654,10 +768,16 @@
                 </ul>
 
                 <div class="footer_sel">
-                    <a href="#" class="selectBtn">
-                        시·도 선거관리위원회 바로가기
-                        <span class="f_select">레이어열기</span>
-                    </a>
+                    <select>
+                        <option selected>시·도 선거관리위원회 바로가기 </option>
+                        <option>서울특별시선거관리위원회</option>
+                        <option>부산광역시선거관리위원</option>
+                        <option>대구광역시선거관리위원회</option>
+                        <option>인천광역시선거관리위원회</option>
+                        <option>광주광역시선거관리위원회</option>
+                        <option>대전광역시선거관리위원회</option>
+                        <option>울산광역시선거관리위원회</option>
+                    </select>
 
                 </div>
                 <p>
@@ -668,17 +788,20 @@
                 </p>
                 <div id="footer_info">
                     <div class="container ">
-                      <img src="./img/f_1.png" alt="footer_1">
-                      <img src="./img/f_2.png" alt="footer_2">
-                      <img src="./img/f_3.png" alt="footer_3">
+                        <img src="./img/f_1.png" alt="footer_1">
+                        <img src="./img/f_2.png" alt="footer_2">
+                        <img src="./img/f_3.png" alt="footer_3">
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>">
-<script src="js/custom_jq3.js"></script>
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/custom_tab1.js"></script>
+    <script src="js/mainslider.js"></script>
 
 
 

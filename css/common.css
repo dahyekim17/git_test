@@ -1,6 +1,7 @@
 
    html {
     overflow-y: scroll;
+    font-family: 'Fredoka One', cursive;
   }
   * {
     margin: 0;
@@ -9,7 +10,7 @@
   }
   
   #banners {
-    height: 474px;
+    height: 520px;
   }
   #contents {
     height: 714px;
@@ -35,7 +36,7 @@
   
   /* height */
   body {
-    font-family: "Malgun Gothic", "맑은 고딕", Dotum, "돋움체", Arial, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
   }
   ul,
   li {
@@ -43,7 +44,7 @@
   }
   img {
     border: 0;
-    padding-top: 35px;
+    padding-top: 20px;
     vertical-align: top;
   }
   a {
@@ -413,11 +414,12 @@
   } */
 
   .banner{
+    position: relative;
     padding-top: 45px;
   }
   #mainNoticeBar {
     position: relative;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
     padding-left: 150px;
     width: 986px;
     height: 44px;
@@ -465,7 +467,7 @@
     overflow: hidden;
   }
   
-  .ban1_img_01 {
+/*   .ban1_img_01 {
     background: url(../img/ban1_img01.png) no-repeat center;
     border-radius: 10px;
     margin-right: 5px;
@@ -491,13 +493,14 @@
     width: 280px;
     height: 320px;
     float: left;
-  }
+  } */
   
   .ban1_img_04 p {
     font-size: 14px;
   }
   /*   margin-left: 3%; */
   #mainService1 {
+    margin: 20px 2px;
     float: right;
     margin-bottom: 15px;
     padding: 25px 18px;
@@ -611,6 +614,7 @@
   font-size: 14px;
 }
 .topArea .title{
+width: 290px;
 padding-top: 25px;
 height: 56px;
 line-height: 28px;
@@ -626,13 +630,14 @@ font-size: 18px;
   text-decoration: underline;
 }
 
-#tab01,#tab03 ul {
+#tab01 ul {
   padding-top: 10px;
 }
 #tab01 ul li {
   padding: 5px 0;
 }
 #tab01 ul li a {
+  width: 400px;
   display: block;
   position: relative;
   padding-left: 10px;
@@ -654,6 +659,7 @@ font-size: 18px;
   padding: 5px 0;
 }
 #tab02 ul li a {
+  width: 400px;
   display: block;
   position: relative;
   padding-left: 10px;
@@ -675,6 +681,7 @@ font-size: 18px;
   padding: 5px 0;
 }
 #tab03 ul li a {
+  width: 400px;
   display: block;
   position: relative;
   padding-left: 10px;
@@ -696,6 +703,7 @@ font-size: 18px;
   padding: 5px 0;
 }
 #tab04 ul li a {
+  width: 400px;
   display: block;
   position: relative;
   padding-left: 10px;
@@ -708,6 +716,54 @@ font-size: 18px;
   text-decoration: none;
 }
 #tab04 ul li a:hover {
+  background: #ffd951;
+}
+#tab05 ul li a {
+  width: 400px;
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 232%;
+  color: #111;
+  text-decoration: none;
+}
+#tab05 ul li a:hover {
+  background: #ffd951;
+}
+#tab06 ul li a {
+  width: 400px;
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 232%;
+  color: #111;
+  text-decoration: none;
+}
+#tab06 ul li a:hover {
+  background: #ffd951;
+}
+#tab07 ul li a {
+  width: 400px;
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 232%;
+  color: #111;
+  text-decoration: none;
+}
+#tab07 ul li a:hover {
   background: #ffd951;
 }
 
@@ -725,14 +781,14 @@ font-size: 18px;
     height: 316px;
     margin-left: 0%;
   } */
-  .mainpop1_2 {
+/*   .mainpop1_2 {
     background: rgb(233, 152, 77);
     width: 405px;
     height: 316px;
     margin-left: 45px;
     margin-right: 55px;
     margin-top: 30px;
-  }
+  } */
   /* .mainpop {
     background: rgb(233, 196, 77);
     width: 40%;
@@ -760,6 +816,14 @@ font-size: 18px;
     position: relative;
     margin-top: -36px;
   }
+  .content1_top .tabBar{
+    margin-bottom: 8px;
+    border-bottom: 1px solid #c0e1dc;
+  }
+
+
+
+
 /*   .mainpop1_1 {
     background: rgb(161, 202, 218);
     width: 405px;
@@ -821,6 +885,7 @@ font-size: 18px;
   .content2_icon div p a:hover{
     margin-bottom: 30px;
   }
+
   .content2_icon a {
     padding-top: 60px;
     display: block;
@@ -828,6 +893,9 @@ font-size: 18px;
     color: #333;
     text-align: center;
 
+  }
+  .ban2_icon_01:hover {
+    transform: translateY(-10px);
   }
   .ban2_icon_01 {
     width: 142px;
@@ -934,6 +1002,7 @@ font-size: 18px;
     height: 48px;
     box-sizing: border-box;
   }
+  
   .sns_01 {
     width: 40px;
     height: 40px;
@@ -1058,12 +1127,12 @@ font-size: 18px;
     box-sizing: border-box;
   }
   
-  #footer .footer_sel .selectBtn {
+.footer_sel select {
     display: block;
     padding-left: 10px;
     width: 240px;
     height: 38px;
-    background: #35383f url(../img/s_Btn.png) no-repeat 95% center;
+    background: #35383f  no-repeat 95% center;
     border: 1px solid #5a5d65;
     color: #fff;
     box-sizing: border-box;
