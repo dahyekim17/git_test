@@ -821,7 +821,123 @@ font-size: 18px;
     border-bottom: 1px solid #c0e1dc;
   }
 
+  /*mainpop1_bottom  */
+  .mainpop1_bottom img{
+    padding-top: 256PX;
+  }
+  .mainpop1_top{
+    width:90%;
+    position:relative;
+    margin:5% auto 0;
+  }
+  
+  
+  .carousel{
+    /* width: 100%;
+    position: relative;
+    padding-top: 50%;
+    overflow: hidden; */
+    position: relative;
+    padding-top: 50%;
+    left: 911px;
+  }
+  
+  .inner{
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  
+  
+  .slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .slide.active,
+  .slide.left,
+  .slide.right{
+    z-index: 2;
+    opacity: 1;
+  }
+  
+  .js-reset-left{left:auto}
+  
+  
+  .slide.left{
+    left:-100%;
+    right:0;
+  }
+  
+  .slide.right{
+    right:-100%;
+    left: auto;
+  }
+  
+  .transition .slide.left{left:0%}
+  .transition .slide.right{right:0%}
+  
+  
+  .transition .slide.shift-right{right: 100%;left:auto}
+  .transition .slide.shift-left{left: 100%;right:auto}
+  
+  .transition .slide{
+    transition-property: right, left, margin;
+  }
+  
+  
+  
+  .arrow{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    top:50%;
+    z-index:5;
+    border-top:3px solid #333;
+    border-right:3px solid #333;
+    cursor:pointer;
+    transition:border-color 0.3s ease-out;
+  }
+  
+  .arrow:hover{border-color:#fff}
 
+  .arrow-left{
+    left:305px;
+    top: 374px;
+    transform:rotate(225deg);
+  }
+  
+  .arrow-right{
+    left:334px;
+    top: 374px;
+    transform:rotate(45deg);
+  }
+  
+  
+  .slide{
+    text-align:center;
+    padding-top:25%;
+    background-size:cover;
+  }
+  
+  h1{
+    width:100px;
+    height:100px;
+    background-color:rgba(146, 45, 141,0.7);
+    margin:auto;
+    line-height:100px;
+    color:#fff;
+    font-size:2.4em;
+    border-radius:50%;
+  }
 
 
 /*   .mainpop1_1 {
@@ -832,7 +948,7 @@ font-size: 18px;
     margin-left: 3%;
     margin-top: 30px;
   } */
-  .content1_bottom {
+/*   .content1_bottom {
     float: right;
     width: 370px;
     height: 160px;
@@ -848,7 +964,7 @@ font-size: 18px;
     width: 370px;
     height: 160px;
     float: left;
-  }
+  } */
   
   /* .mainpop2{
     background-color: #57a87c;
@@ -863,107 +979,54 @@ font-size: 18px;
    */
   
   /* ==== content2 banner02 ==== */
-  .mainquick {
-    padding-top: 30px;
+  #mainQuick {
     clear: both;
     float: left;
     position: relative;
     width: 855px;
-    height: 148px;
-        padding-top: 0;
-  }
-  .mainquick .title {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 19px;
-    font-weight: 500;
-    color: #1b1b1b;
-  }
-  .content2_icon{
-    width: 855px;
-  }
-  .content2_icon div p a:hover{
-    margin-bottom: 30px;
-  }
+}
 
-  .content2_icon a {
-    padding-top: 60px;
+#mainQuick .slick-list {
+    padding: 15px;
+}
+
+.slick-slide {
+    display: block;
+}
+
+#mainQuick ul li {
+    float: left;
+    position: relative;
+}
+
+#mainQuick ul li .icon {
+    display: block;
+   /*  margin-bottom: 15px; */
+    text-align: center;
+}
+#mainQuick ul li .icon img{
+    margin: 0 auto;
+    width: auto;
+    margin: 0 35px 0;
+}
+#mainQuick ul li .icon:hover{
+margin-top: 20px;
+}
+#mainQuick ul li a{
     display: block;
     font-size: 16px;
     color: #333;
     text-align: center;
-
-  }
-  .ban2_icon_01:hover {
-    transform: translateY(-10px);
-  }
-  .ban2_icon_01 {
-    width: 142px;
-    height: 92px;
-    float: left;
-    margin-bottom: 15px;
-    background: url(../img/ban2_icon_01.jpg) no-repeat;
-    margin: 0 auto;
-    width: auto;
-    padding-right: 40px;
-  }
-  .ban2_icon_02 {
-    width: 142px;
-    height: 92px;
-    float: left;
-    margin-bottom: 15px;
-    background: url(../img/ban2_icon_02.jpg) no-repeat;
-    background-position: 20px 0;
-    display: inline-block;
-    margin: 0 auto;
-    width: auto;
-    padding-right: 40px;
-  }
-  .ban2_icon_03 {
-    width: 142px;
-    height: 92px;
-    float: left;
-    margin-bottom: 15px;
-    background: url(../img/ban2_icon_03.jpg) no-repeat;
-    background-position: 30px 0;
-    margin: 0 auto;
-    width: auto;
-    padding-right: 40px;
-  }
-  .ban2_icon_04 {
-    width: 142px;
-    height: 92px;
-    float: left;
-    margin-bottom: 15px;
-    background: url(../img/ban2_icon_04.jpg) no-repeat;
-    background-position: 10px 0;
-    margin: 0 auto;
-    width: auto;
-    padding-right: 40px;
-  }
-  .ban2_icon_05 {
-    width: 142px;
-    height: 92px;
-    float: left;
-    margin-bottom: 15px;
-    background: url(../img/ban2_icon_05.jpg) no-repeat;
-    background-position: 15px 0;
-    margin: 0 auto;
-    width: auto;
-    padding-right: 40px;
-  }
-  .ban2_icon_06 {
-    width: 142px;
-    height: 92px;
-    float: left;
-    margin-bottom: 15px;
-    background: url(../img/ban2_icon_06.jpg) no-repeat;
-    background-position: 15px 0;
-    margin: 0 auto;
-    width: auto;
-    padding-right: 40px;
-  }
-  
+}
+#mainQuick ul li:after{
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 14px;
+    height: 36px;
+    border-right: 1px dotted #c1c1c1;
+}
   /* ==== content2_sns ==== */
   .content2_sns {
     float: right;
@@ -994,7 +1057,59 @@ font-size: 18px;
     color: #6c6c6c;
     line-height: 145%;
   }
-  .content2_sns_icon {
+  
+/* mainSns */
+#mainSns ul li{
+  display: block;
+  float: left;
+  margin-right: 3px;
+  box-sizing: border-box;
+}
+#mainSns ul li:hover{
+  margin-bottom: 20px;
+}
+#mainSns ul:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+#mainSns {
+  top: -15px;
+  clear: both;
+  float: left;
+  position: relative;
+  width: 855px;
+}
+
+.slick-slide {
+  display: block;
+}
+
+#mainSns ul li {
+  float: left;
+  position: relative;
+}
+
+#mainSns ul li .icon {
+  display: block;
+ /*  margin-bottom: 15px; */
+  text-align: center;
+}
+#mainSns ul li .icon img{
+  margin: 0 auto;
+  width: auto;
+}
+#mainSns ul li .icon:hover{
+margin-top: 20px;
+}
+#mainSns ul li a{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*   .content2_sns_icon {
     float: right;
     position: relative;
     padding-left: 0px;
@@ -1002,87 +1117,28 @@ font-size: 18px;
     height: 48px;
     box-sizing: border-box;
   }
-  
-  .sns_01 {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    background: url(../img/sns_icon_01.jpg) no-repeat;
-  }
-  .sns_02 {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    background: url(../img/sns_icon_02.jpg) no-repeat;
-  }
-  .sns_03 {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    background: url(../img/sns_icon_03.jpg) no-repeat;
-  }
-  .sns_04 {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    background: url(../img/sns_icon_04.jpg) no-repeat;
-  }
-  .sns_05 {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    background: url(../img/sns_icon_05.jpg) no-repeat;
-  }
-  .sns_06 {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    background: url(../img/sns_icon_06.jpg) no-repeat;
-  }
+   */
   /* ===== content3 banner03 ===== */
   
-  .ban3_icon_01 {
-    width: 187px;
+
+   #ban3_icon {
     height: 50px;
-    float: left;
-    margin-left: 3%;
-    background: url(../img/ban3_icon_01.jpg) no-repeat;
+    width: 100%;
   }
-  .ban3_icon_02 {
-    width: 187px;
-    height: 50px;
-    float: left;
-    margin-left: 3%;
-    background: url(../img/ban3_icon_02.png) no-repeat;
+   #ban3_icon img {
+padding-top: 0;
   }
-  .ban3_icon_03 {
-    width: 187px;
-    height: 50px;
-    float: left;
-    margin-left: 3%;
-    background: url(../img/ban3_icon_03.png) no-repeat;
-  }
-  .ban3_icon_04 {
-    width: 187px;
-    height: 50px;
-    float: left;
-    margin-left: 3%;
-    background: url(../img/ban3_icon_04.jpg) no-repeat;
-  }
-  .ban3_icon_05 {
-    width: 187px;
-    height: 50px;
-    float: left;
-    margin-left: 3%;
-    background: url(../img/ban3_icon_05.jpg) no-repeat;
+
+  
+  .button-box {
+    text-align:center;
+    padding: 20px 0;
   }
   
+
+  a:last-child {
+    margin-right: 0px;
+  }
   /* ===== footer ===== */
   .footer_inner {
     position: relative;
