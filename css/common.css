@@ -1001,7 +1001,6 @@ font-size: 18px;
 
 #mainQuick ul li .icon {
     display: block;
-   /*  margin-bottom: 15px; */
     text-align: center;
 }
 #mainQuick ul li .icon img{
@@ -1010,7 +1009,7 @@ font-size: 18px;
     margin: 0 35px 0;
 }
 #mainQuick ul li .icon:hover{
-margin-top: 20px;
+margin-top: -10px;
 }
 #mainQuick ul li a{
     display: block;
@@ -1066,7 +1065,7 @@ margin-top: 20px;
   box-sizing: border-box;
 }
 #mainSns ul li:hover{
-  margin-bottom: 20px;
+  margin-top: -10px;
 }
 #mainSns ul:after{
   display: block;
@@ -1093,7 +1092,6 @@ margin-top: 20px;
 
 #mainSns ul li .icon {
   display: block;
- /*  margin-bottom: 15px; */
   text-align: center;
 }
 #mainSns ul li .icon img{
@@ -1101,7 +1099,7 @@ margin-top: 20px;
   width: auto;
 }
 #mainSns ul li .icon:hover{
-margin-top: 20px;
+margin-top: -2px;
 }
 #mainSns ul li a{
   display: block;
@@ -1117,28 +1115,80 @@ margin-top: 20px;
     height: 48px;
     box-sizing: border-box;
   }
-   */
+   
+
+
   /* ===== content3 banner03 ===== */
-  
+ 
+/* Slider */
 
-   #ban3_icon {
-    height: 50px;
-    width: 100%;
-  }
-   #ban3_icon img {
-padding-top: 0;
-  }
+/* .slick-slide {margin: 0px 20px;}
 
-  
-  .button-box {
-    text-align:center;
-    padding: 20px 0;
-  }
-  
+.slick-slide img {width: 100%;} */
 
-  a:last-child {
-    margin-right: 0px;
-  }
+
+
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus{outline: none;}
+.slick-list.dragging{cursor: pointer; cursor: hand;}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+ /*    display: none; */
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+/* [dir='rtl'] .slick-slide
+{
+    float: right;
+} */
+/* .slick-slide img
+{
+    display: block;
+} */
+/* .slick-slide.slick-loading img
+{
+    display: none;
+} */
+/* .slick-slide.dragging img
+{
+    pointer-events: none;
+} */
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+
+
   /* ===== footer ===== */
   .footer_inner {
     position: relative;

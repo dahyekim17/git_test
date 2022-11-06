@@ -1,11 +1,4 @@
 
-/*
- * We trigger the factory() function is different
- * ways to support modular JavaScript libraries. See
- * the 'Wrapping Up' section of the tutorial for
- * more information
- *
- */
 ;(function(factory){
   
     if (typeof define === 'function' && define.amd) {
@@ -18,20 +11,11 @@
   
   })(function($){
     
-    /*
-       * We define Zippy as a variable of type ‘function’. 
-     * Here, we use an anonymous function to ensure 
-     * that the logic inside the function is executed immediately. 
-       *
-       */
+
     var Zippy = (function(element, settings){
       
       var instanceUid = 0;
-      
-      /*
-       * The constructor function for Zippy
-       *
-       */
+
       function _Zippy(element, settings){
         this.defaults = {
           slideDuration: '3000',
@@ -40,11 +24,10 @@
           arrowLeft: '.arrow-left'
         };
         
-        // We create a new property to hold our default settings after they
-        // have been merged with user supplied settings
+
         this.settings = $.extend({},this,this.defaults,settings);
         
-        // This object holds values that will change as the plugin operates
+
         this.initials = {
           currSlide : 0,
           $currSlide: null,
@@ -344,10 +327,10 @@
        *
        */
       Zippy.prototype._jsAnimation = function($nextSlide,direction){
-          //Cache this reference for use inside animate functions
+        
           var _ = this;
           
-       // See CSS for explanation of .js-reset-left
+
           if(direction == 'right') _.$currSlide.addClass('js-reset-left');
           
        var animation = {};
@@ -356,14 +339,14 @@
           var animationPrev = {};
           animationPrev[direction] = '100%';
           
-          //Animation: Current slide
+    
           this.$currSlide.animate(animationPrev,this.settings.speed);
           
-          //Animation: Next slide
+
           $nextSlide.animate(animation,this.settings.speed,'swing',function(){
-              //Get rid of any JS animation residue
+
               _.$currSlide.removeClass('active js-reset-left').attr('style','');
-              //Cache the next slide after classes and inline styles have been removed
+
               _.$currSlide = $nextSlide.removeClass(direction).attr('style','');
               _._updateIndicators();
               _.startTimer();
@@ -399,12 +382,12 @@
   
   });
   
-  // Custom options for the carousel
+
   var args = {
-      arrowRight : '.arrow-right', //A jQuery reference to the right arrow
-      arrowLeft : '.arrow-left', //A jQuery reference to the left arrow
-      speed : 1000, //The speed of the animation (milliseconds)
-      slideDuration : 4000 //The amount of time between animations (milliseconds)
+      arrowRight : '.arrow-right', 
+      arrowLeft : '.arrow-left', 
+      speed : 1000, 
+      slideDuration : 4000 
   };
   
   $('.carousel').Zippy(args);
