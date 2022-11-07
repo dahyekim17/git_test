@@ -387,31 +387,7 @@
   #main_banner {
     width: 100%;
   }
-  #main_banner {
-    /* 	background: url(../img/bg_mainVisual.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 600px; */
-  }
-  
-  /* .mainslider {
-    width: calc(280px * 3);
-    height: 320px;
-    display: flex;
-  }
-  .mainslider > * {
-    width:280px;
-  } */
-  
-  /* banners */
-  
-  /* #mainNoticeBar {
-    height: 50px;
-    width: 80%;
-    margin: 0 auto 20px;
-    background: white;
-    border-radius: 20px;
-  } */
+
 
   .banner{
     position: relative;
@@ -774,35 +750,6 @@ font-size: 18px;
 
 
 
-
-/*   .mainpop1_1 {
-    background: rgb(233, 196, 77);
-    width: 405px;
-    height: 316px;
-    margin-left: 0%;
-  } */
-/*   .mainpop1_2 {
-    background: rgb(233, 152, 77);
-    width: 405px;
-    height: 316px;
-    margin-left: 45px;
-    margin-right: 55px;
-    margin-top: 30px;
-  } */
-  /* .mainpop {
-    background: rgb(233, 196, 77);
-    width: 40%;
-    height: 320px;
-    float: left;
-    margin-left: 3%;
-  } */
-  /* .content1_v{
-    width: 370px;
-    height: 320px;
-    float: left;
-    flex-direction: column;
-    background-color: rgb(235, 165, 81);
-  } */
   .content1_top {
     float: right;
     margin-top: -82px;
@@ -892,7 +839,6 @@ font-size: 18px;
   .transition .slide{
     transition-property: right, left, margin;
   }
-  
   
   
   .arrow{
@@ -1119,6 +1065,13 @@ margin-top: -2px;
 
 
   /* ===== content3 banner03 ===== */
+#content3{
+    height: 85px;
+    border-top: 1px solid #eaeaea;
+    box-sizing: border-box;
+}
+
+
  
 /* Slider */
 
