@@ -792,7 +792,7 @@ font-size: 18px;
   } */
   button.active {
     background-color: #b3dbd5;
-    border-top-left-radius: 10px
+    border-radius: 10px 10px 0 0;
   }
   
 .contentWrapper {
