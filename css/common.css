@@ -509,7 +509,7 @@
 
 .tabnav {
   font-size: 0;
-  width: 600px;
+  width: 455px;
   border: 1px solid #ddd;
 }
 
@@ -743,40 +743,129 @@ font-size: 18px;
   background: #ffd951;
 }
 
-
-
-
-
-
+/*mainpop1_top*/
 
 
   .content1_top {
     float: right;
     margin-top: -82px;
     margin-bottom: 12px;
-    padding: 10px 20px 15px;
+    padding: -1px 20px 15px;
     width: 370px;
-    height: 280px;
+    height: 310px;
     background: #d8faf5;
     border-radius: 12px;
     box-sizing: border-box;
     position: relative;
-    margin-top: -36px;
+    margin-top: -70px;
   }
-  .content1_top .tabBar{
+  
+  .buttonWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 8px;
     border-bottom: 1px solid #c0e1dc;
   }
+  button {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background: #d8faf5;
+    color: #232c3d;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  button li{
+    display: block;
+   
+  }
+  button li a{
+    display: block;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #1e1e1e;
+  }
+ /*  button:hover {
+    background-color: #2a6b67;
+  } */
+  button.active {
+    background-color: #b3dbd5;
+    border-top-left-radius: 10px
+  }
+  
+.contentWrapper {
+  position: relative;
+}
+.contentWrapper ul li{
+  display: block;
+  float: left;
+  padding: 2px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.contentWrapper ul li dl {
+  height: 118px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contentWrapper ul li dl dt {
+  margin-bottom: 5px;
+    height: 30px;
+    line-height: 30px;
+    background: #229992;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.contentWrapper ul li dl dd {
+  display: block;
+  padding: 0 13px;
+}
+.contentWrapper ul li dl dd a {
+  display: inline-block;
+  position: relative;
+  padding: 1px 0 3px 8px;
+  font-size: 15px;
+}
+.contentWrapper ul li dl dd a:hover{
+  background: #ffd951;
+}
+
+.mainpop1_top .content {
+  display: none;
+  padding: -18px 20px;
+  position: absolute;
+  top: -1PX;
+  left: 0;
+}
+
+.content.active {
+  display: block;
+}
+.mainpop1_top{
+  width:90%;
+  position:relative;
+  margin:0 auto;
+  z-index: 999999999999;
+}
+/*   .content1_top .tabBar{
+    margin-bottom: 8px;
+    border-bottom: 1px solid #c0e1dc;
+  }
+ */
+
 
   /*mainpop1_bottom  */
   .mainpop1_bottom img{
     padding-top: 256PX;
   }
-  .mainpop1_top{
-    width:90%;
-    position:relative;
-    margin:5% auto 0;
-  }
+
   
   
   .carousel{
@@ -884,45 +973,6 @@ font-size: 18px;
     font-size:2.4em;
     border-radius:50%;
   }
-
-
-/*   .mainpop1_1 {
-    background: rgb(161, 202, 218);
-    width: 405px;
-    height: 314px;
-    float: left;
-    margin-left: 3%;
-    margin-top: 30px;
-  } */
-/*   .content1_bottom {
-    float: right;
-    width: 370px;
-    height: 160px;
-    background: #eeed9d;
-    border-radius: 12px;
-    box-sizing: border-box;
-  }
-  .mainpop1_bottom {
-    background: url(../img/mainpop_b_02.png) no-repeat center;
-    border-radius: 10px;
-    margin: 0px;
-    background-size: 370px 160px;
-    width: 370px;
-    height: 160px;
-    float: left;
-  } */
-  
-  /* .mainpop2{
-    background-color: #57a87c;
-    height: 160px;
-    padding: 10px;
-  } */
-  /* .content1_bottom {
-    background-color: #5777a8;
-    height: 160px;
-    padding: 10px;
-  }
-   */
   
   /* ==== content2 banner02 ==== */
   #mainQuick {
