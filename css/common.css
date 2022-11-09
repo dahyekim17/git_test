@@ -605,7 +605,6 @@
 }
 .topArea .title{
 width: 290px;
-padding-top: 25px;
 height: 56px;
 line-height: 28px;
 overflow: hidden;
@@ -709,7 +708,7 @@ font-size: 18px;
   background: #ffd951;
 }
 #tab05 ul li {
-  padding: 5px 0;
+  padding-top: 12px;
 }
 #tab05 ul li a {
   width: 400px;
@@ -728,7 +727,7 @@ font-size: 18px;
   background: #ffd951;
 }
 #tab06 ul li {
-  padding: 5px 0;
+  padding-top: 12px;
 }
 #tab06 ul li a {
   width: 400px;
@@ -747,7 +746,7 @@ font-size: 18px;
   background: #ffd951;
 }
 #tab07 ul li {
-  padding: 5px 0;
+  padding-top: 12px;
 }
 #tab07 ul li a {
   width: 400px;
