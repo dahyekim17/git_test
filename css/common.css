@@ -866,6 +866,7 @@ font-size: 18px;
   position: absolute;
   top: -1PX;
   left: 0;
+  z-index: 999999;
 }
 
 .content.active {
@@ -875,7 +876,6 @@ font-size: 18px;
   width:90%;
   position:relative;
   margin:0 auto;
-  z-index: 999999999999;
 }
 /*   .content1_top .tabBar{
     margin-bottom: 8px;
