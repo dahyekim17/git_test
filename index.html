@@ -43,10 +43,10 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans+KR&display=swap");
 
-    #mainService1 {
+    /*    #mainservice{
       background: url(img/tab1.png);
     }
-
+ */
   </style>
 </head>
 
@@ -440,9 +440,108 @@
               </p>
             </div>
           </div>
-          <div id="mainService1">
-            <div class="ban1_img_04">
-              <p><a href="#"></a></p>
+          <div id="mainservice">
+            <!-- Tab items -->
+            <div class="tabmain">
+              <ul class="tab-item active">
+                <li>
+                  <a href="#" title="새창열림">
+                    <span class="titem1">
+                      <img src="./img/s_icon_1.jpg" alt=" 민원" />
+                    </span>
+                    민원
+                  </a>
+                </li>
+
+              </ul>
+              <ul class="tab-item">
+                <li>
+                  <a href="#" title="새창열림">
+                    <span class="titem1">
+                      <img src="./img/s_icon_2.jpg" alt=" 정당/후보자" />
+                    </span>
+                    정당/후보자
+                  </a>
+                </li>
+
+              </ul>
+              <ul class="tab-item">
+                <li>
+                  <a href="#" title="새창열림">
+                    <span class="titem1">
+                      <img src="./img/s_icon_3.jpg" alt=" 선거/법령" />
+                    </span>
+                    선거/법령
+                  </a>
+                </li>
+
+              </ul>
+              <ul class="tab-item">
+                <li>
+                  <a href="#" title="새창열림">
+                    <span class="titem1">
+                      <img src="./img/s_icon_4.jpg" alt="  민주시민" />
+                    </span>
+                    민주시민
+                  </a>
+                </li>
+
+              </ul>
+              <div class="line"></div>
+            </div>
+            <div class="tab-main">
+              <div class="tab-pane active">
+                <ul>
+                  <li><a href="#">정치관계법 질의</a></li>
+                  <li><a href="#">불공정 여론조사 신고</a></li>
+                  <li><a href="#">위반행위 신고</a></li>
+                  <li><a href="#">홈페이지 개선의견</a></li>
+                  <li><a href="#">예산낭비 신고</a></li>
+                  <li><a href="#">자유의견</a></li>
+                  <li><a href="#">사이버 감사실</a></li>
+                  <li><a href="#">선거보도 이의신청</a></li>
+                  <li><a href="#">정보공개 청구</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane">
+                <ul>
+                  <li><a href="#">정책공약(당선인공약)</a></li>
+                  <li><a href="#">정당등록현황</a></li>
+                  <li><a href="#">창당준비위원회</a></li>
+                  <li><a href="#">정책연구소</a></li>
+                  <li><a href="#">강령·당헌</a></li>
+                  <li><a href="#">역대 후보자 선전물</a></li>
+                  <li><a href="#">정치자금</a></li>
+                  <li><a href="#">후원회 정보</a></li>
+                  <li><a href="#">후원금/기탁금 기부</a></li>
+                  <li><a href="#">후원회 등록절차</a></li>
+
+                </ul>
+              </div>
+              <div class="tab-pane">
+                <ul>
+                  <li><a href="#">투표율 정보</a></li>
+                  <li><a href="#">선거통계</a></li>
+                  <li><a href="#">선거일정</a></li>
+                  <li><a href="#">선거자료</a></li>
+                  <li><a href="#">선거법규</a></li>
+                  <li><a href="#">서면/인터넷 질의보기</a></li>
+                  <li><a href="#">판례보기</a></li>
+                  <li><a href="#">자주묻는 질문</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane">
+                <ul>
+                  <li><a href="#">교육 연수계획</a></li>
+                  <li><a href="#">민주시민 연수신청</a></li>
+                  <li><a href="#">미래지도자 열린캠프</a></li>
+                  <li><a href="#">온라인 교육</a></li>
+                  <li><a href="#">민주시민 교육자료</a></li>
+                  <li><a href="#">연구자료/학술지</a></li>
+                  <li><a href="#">유권자 정치페스티벌</a></li>
+                  <li><a href="#">학교 선거교실</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -682,15 +781,15 @@
           <div class="content1_top">
             <div class="mainpop1_top">
               <div class="buttonWrapper">
-                <button class="tab-button active" data-id="home">
-                  <li><a href="#home">지방선거</a></li>
-                </button>
-                <button class="tab-button" data-id="about">
-                  <li><a href="#about">대통령선거</a></li>
-                </button>
-                <button class="tab-button" data-id="contact">
-                  <li><a href="#contact">역대선거</a></li>
-                </button>
+                <ul class="tab-button active" data-id="home">
+                    <li><a href="#home">지방선거</a></li>
+                </ul>
+                <ul class="tab-button" data-id="about">
+                    <li><a href="#about">대통령선거</a></li>
+                </ul>
+                <ul class="tab-button" data-id="contact">
+                    <li><a href="#contact">역대선거</a></li>
+                </ul>
               </div>
               <div class="contentWrapper">
                 <ul class="content active" id="home">
@@ -1016,7 +1115,7 @@
       <div class="container cf">
         <div class="row">
           <div class="financial-box">
-            <section class="ban3_icon">
+            <ul class="ban3_icon">
               <li class="item"><a href="#"><img src="./img/ban3_icon_01.jpg"></a></li>
               <li class="item"><a href="#"><img src="./img/ban3_icon_02.png"></a></li>
               <li class="item"><a href="#"><img src="./img/ban3_icon_03.png"></a></li>
@@ -1027,7 +1126,7 @@
               <li class="item"><a href="#"><img src="./img/ban3_icon_08.jpg"></a></li>
               <li class="item"><a href="#"><img src="./img/ban3_icon_09.jpg"></a></li>
               <li class="item"><a href="#"><img src="./img/ban3_icon_10.jpg"></a></li>
-            </section>
+            </ul>
           </div>
         </div>
 
@@ -1091,7 +1190,9 @@
   <script src="js/custom_tab1.js"></script>
   <script src="js/mainslider.js"></script>
   <script src="js/slide_3.js"></script>
+  <!--   <script src="js/mainservice.js"></script> -->
   <script src="js/mainpop1_top.js"></script>
   <script src="js/mainpop1_bottom.js"></script>
 </body>
+
 </html>
