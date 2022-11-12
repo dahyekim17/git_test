@@ -87,15 +87,20 @@
   
   /* 상단메뉴바 */
   
+
+#gnb{
+float: left;
+margin-top: 10px;
+}
+#gnb .depth1 {
+  padding-left: 50px;
+}
 #gnb .depth1 > li{
   display: block;
     float: left;
-    padding: 0 -10px 0px;
-    padding-left: 36px;
+    padding: 0 0px 0px 14px;
+    padding-left: 12px;
 
-}
-#gnb .depth1 {
-  padding-left: 20px;
 }
   #nec .fl dl a {
     width: 257px;
@@ -130,9 +135,12 @@
     width: 1280px;
     margin: 0 auto;
   }
+  #nav .f1{
+padding-top: 12px;
+  }
   #nav li {
     height: auto;
-    margin: 0 46px;
+    margin: 0 40px;
   }
   #nav #gnb li > a {
     height: 30px;
