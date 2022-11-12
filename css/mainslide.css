@@ -17,6 +17,7 @@ li{list-style:none;}
   bottom: 0;
   border: 6px solid #fff;
   border-radius: 10px;
+  height: 314px;
 }
 
 #banners .slide_container img {
@@ -32,7 +33,7 @@ li{list-style:none;}
 	position: relative;
 	width: 880px;
 	margin: 0 auto;
-	top: 16px;
+	top: 4px;
 	overflow:hidden;
 	padding-top:220px;
 }
@@ -51,10 +52,13 @@ li{list-style:none;}
 /* 	background:#ccc; */
 	position: absolute;
 }
-
+/* .slides li a:hover img{
+	transform: scale(1.1);
+    transition-duration: 0.3s;
+} */
 .controls{
 	text-align: center;
-	margin-top: 130px;
+	margin-top: 140px;
 }
 
 .controls span{
